@@ -28,10 +28,7 @@ public class windyCommand implements CommandHandler {
 
         var packet = new PacketWindSeedClientNotify(luaFile);
 
-        System.out.println(packet);
-
         targetPlayer.sendPacket(packet);
-        sender.sendPacket(packet);
 
         CommandHandler.sendMessage(targetPlayer, "Send success");
     }
