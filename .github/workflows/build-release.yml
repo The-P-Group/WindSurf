@@ -10,8 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get tag name
-        run: echo "The tag name is ${{ github.ref | replace('refs/tags/', '') }}"
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
 
       - name: Checkout
         uses: actions/checkout@v3
@@ -29,4 +30,4 @@ jobs:
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "target/WindSurf-${{ github.ref | replace('refs/tags/', '') }}-SNAPSHOT.jar"
+          artifacts: "target/WindSurf-${{ steps.get_version.outputs.VERSION }}-SNAPSHOT.jar"
