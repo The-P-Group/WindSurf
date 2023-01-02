@@ -6,7 +6,7 @@
 
     <groupId>me.lucasdang</groupId>
     <artifactId>WindSurf</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2.1-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -25,10 +25,10 @@
         <dependency>
             <groupId>xyz.grasscutters</groupId>
             <artifactId>grasscutter</artifactId>
-            <version>1.4.4-dev</version>
+            <version>1.4.5-dev</version>
             <!--<scope>provided</scope>-->
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/grasscutter-1.4.4-dev.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/resources/grasscutter-1.4.5-dev.jar</systemPath>
         </dependency>
     </dependencies>
 
