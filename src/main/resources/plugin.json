@@ -1,7 +1,7 @@
 {
-  "name": "setWeaponLevel",
-  "description": "Set current character weapon level",
-  "version": "1.1-dev",
+  "name": "WindSurf",
+  "description": "We surf on the wind",
+  "version": "1.2-dev",
   "authors": [ "phuchptty" ],
   "mainClass": "me.lucasdang.grasscutter.WindSurf",
   "comments": [
